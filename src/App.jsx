@@ -1,13 +1,16 @@
+import Header from "./component/Header";
+import Footer from "./component/Footer";
+
 function App() {
   return (
     <div className="min-h-screen flex flex-col ">
-      {/* <Header/> */}
+      <Header/>
       <main className="flex flex-wrap justify-center items-center flex-grow
       bg-gray-100 px-10 md:flex-nowrap">
         {/* <LeftSide/>
         <Visualization /> */}
       </main>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
