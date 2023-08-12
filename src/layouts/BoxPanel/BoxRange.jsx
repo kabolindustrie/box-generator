@@ -1,12 +1,12 @@
 import { useDispatch } from "react-redux";
-import { updateBoxvalue } from "../../features/boxProperties";
+import { updateBoxValue } from "../../features/boxProperties";
 
 export default function BoxRange({ inputData }) {
   const dispatch = useDispatch();
 
   function handleInputs(e) {
     dispatch(
-      updateBoxvalue({
+      updateBoxValue({
         inputNumber: inputData.inputNumber,
         value: e.target.value,
       })

@@ -36,11 +36,11 @@ export const boxSlice = createSlice({
   name:"boxProperties",
   initialState,
   reducers: {
-    updateBoxvalue: (state, action) => {
+    updateBoxValue: (state, action) => {
       state.find(el => el.inputNumber === action.payload.inputNumber).value = action.payload.value
     }
   },
 })
 
-export const {updateBoxvalue} = boxSlice.actions
+export const {updateBoxValue} = boxSlice.actions
 export default boxSlice.reducer

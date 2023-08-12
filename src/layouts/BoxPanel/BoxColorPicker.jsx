@@ -1,12 +1,12 @@
 import { useDispatch } from "react-redux";
-import { updateBoxvalue } from "../../features/boxProperties";
+import { updateBoxValue } from "../../features/boxProperties";
 
 export default function BoxColorPicker({ inputData }) {
   const dispatch = useDispatch();
 
   function handleInputs(e) {
     dispatch(
-      updateBoxvalue({
+      updateBoxValue({
         inputNumber: inputData.inputNumber,
         value: e.target.value,
       })
@@ -24,7 +24,7 @@ export default function BoxColorPicker({ inputData }) {
         />
         <input
           value={inputData.value}
-          onChange={handleInputs} 
+          onChange={handleInputs}
           className="cursor-pointer h-[40px]"
           type="color"
         />
