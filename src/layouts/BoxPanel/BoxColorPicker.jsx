@@ -24,7 +24,7 @@ export default function BoxColorPicker({ inputData }) {
         />
         <input
           value={inputData.value}
-          onChange={handleInputs}
+          onChange={handleInputs} 
           className="cursor-pointer h-[40px]"
           type="color"
         />
