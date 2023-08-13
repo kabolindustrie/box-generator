@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 const initialState = [
   {
     id: nanoid(5),
-    Active: true,
+    active: true,
     inset: false,
     inputs: [{
         inputNumber: 1,
@@ -106,7 +106,11 @@ export const shadowSlice = createSlice({
       currentInput.value = action.payload.value
     },
     updateCheckbox: (state, action) => {
-
+      //selectionne la shadow
+      const currentShadow = state.find(
+        shadow => shadow.id === action.payload.shadowID
+      )
+      currentShadow[action.payload.name] = !currentShadow[action.payload.name]
     },
   }
 })
