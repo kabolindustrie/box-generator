@@ -54,7 +54,7 @@ export const shadowSlice = createSlice({
     addShadow: (state, action) => {
       state.push(  {
         id: nanoid(5),
-        Active: true,
+        active: true,
         inset: false,
         inputs: [{
             inputNumber: 1,
