@@ -5,7 +5,8 @@ export default function ShadowColorPicker({ inputData, shadowID }) {
   const dispatch = useDispatch();
 
   function handleInputs(e) {
-    dispatch(updateShadowValue({
+    dispatch(
+      updateShadowValue({
         inputNumber: inputData.inputNumber,
         value: e.target.value,
         shadowID

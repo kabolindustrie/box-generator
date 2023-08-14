@@ -20,7 +20,9 @@ export default function Shadow({ panelNumber, shadow }) {
       />
     }
     else if(input.type === "color") {
-      return <ShadowColorPicker key={index} inputData={shadow.inputs[index]}/>
+      return <ShadowColorPicker key={index} inputData={shadow.inputs[index]}
+      shadowID={shadow.id}
+      />
     }
   })
   return (
