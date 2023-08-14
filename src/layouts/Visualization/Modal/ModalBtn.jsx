@@ -15,7 +15,7 @@ export default function ModalBtn() {
       </button>
       {showModal &&
         createPortal(
-          <ModalResult close={() => setShowModal(!showModal)} />,
+          <ModalResult closeModal={() => setShowModal(!showModal)} />,
           document.body
         )}
     </>
